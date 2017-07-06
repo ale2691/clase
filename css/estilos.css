@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Wild";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("../wild_flower/WildFlowerBold.otf") format("otf"), url("../wild_flower/WildFlowerBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Caviar";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("../caviar_dreams/CaviarDreams.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Blacksword";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("../blacksword/Blacksword.otf") format("otf"); 
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner,.banner img{
+  width: 100%;
+  height: 500px;
+}
+.banner h1{
+  font-family: Wild;
+  font-size: 120px;
+  font-weight: 200;
+  color: white;
+  position: absolute;
+  top: 40%;
+  right: 25%;
+}
+.navegador{
+  width: 100%;
+  background-color: rgb(26, 8, 77);
+  height: 80px;
+}
+.navegador a{
+ color: white;
+}
+.menu{
+  font-family: Caviar;
+  font-size: 1.7em;
+  color: white;
+  width: 60%;
+  margin: auto;
+  padding-top: 20px; 
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+h2{
+  font-family: Blacksword;
+  text-align: center;
+  margin: 65px 0 !important;
+  font-size: 60px;
+}
+.aboutme{
+  width: 65%;
+  height: 450px;
+  margin: 0 auto;
+  display: flex;
+}
+.about-text{
+  padding-right: 80px;
+  font-size: 21px;
+  font-family: Caviar;
+}
+.about-text h3{
+  font-size: 30px !important; 
+  margin: 0 !important;
+}
+.about-text h4{
+  font-size: 28px !important;
+  margin-bottom: 20px !important;
+}
+.about-img img{
+  height: 400px;
+}
+.carousel{
+  top: -100px !important;
+}
+form{
+  margin-bottom: 40px;
+}

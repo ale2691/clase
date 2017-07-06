@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alejandra Saavedra</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+  <div class="contenedor">
+    <div class="banner">
+      <h1>Alejandra Saavedra</h1>
+      <img src="./imagenes/banner.jpg" alt="banner">
+    </div>
+    <div class="navegador">
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href=#aboutme>Sobre mí</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <h2 id="aboutme">Sobre mí</h2>
+    <div class="aboutme" >
+      <div class="about-text">
+        <h3>Alejandra Saavedra</h3>
+        <h4>Diseñadora Gráfica</h4>
+        <p>Soy alejandra Saavedra, diseñadora gráfica. Me gusta dejar mi estilo personal en los proyectos que desarrollo, involucrándome y conociendo las reales necesidades de la empresa para así ser el mejor aliado frente al mercado. ya sea optimizando sus recursos o potenciando sus ingresos.</p>
+      </div>
+      <div class="about-img">
+        <img src="./imagenes/converse-jumping.jpg" alt="">
+      </div>
+    </div>
+    <div class="portafolio" id="portafolio">
+      <h2>Portafolio</h2>        
+    </div>
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="./imagenes/1.jpg" height="300" width="300"></a>
+        <a class="carousel-item" href="#two!"><img src="./imagenes/2.jpg" height="300" width="300"></a>
+        <a class="carousel-item" href="#three!"><img src="./imagenes/3.jpg" height="300" width="300"></a>
+        <a class="carousel-item" href="#four!"><img src="./imagenes/4.jpg" height="300" width="300"></a>
+        <a class="carousel-item" href="#five!"><img src="./imagenes/5.jpg" height="300" width="300"></a>
+        <a class="carousel-item" href="#six!"><img src="./imagenes/6.jpg" height="300" width="300"></a>
+        <a class="carousel-item" href="#seven!"><img src="./imagenes/7.jpg" height="300" width="300"></a>
+        <a class="carousel-item" href="#eight!"><img src="./imagenes/8.jpg" height="300" width="300"></a>
+      </div> 
+    <div class="contacto" id="contacto">
+      <h2>Contacto</h2>
+    </div>
+    <div class="row">
+      <form class="col s10 offset-s2">
+        <div class="row">
+          <div class="input-field col s5">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">First Name</label>
+          </div>
+          <div class="input-field col s5">
+            <i class="material-icons prefix">phone</i>
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Telephone</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s5">
+            <i class="material-icons prefix">email</i>
+            <input id="icon_prefix" type="email" class="validate">
+            <label for="icon_prefix" data-error="Ingrese un correo válido" >Email</label>
+          </div>
+          <div class="input-field col s5">
+            <i class="material-icons prefix">subject</i>
+            <input id="icon_subject" type="text" class="validate">
+            <label for="icon_subject">Asunto</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s10">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+            <label for="icon_prefix2">Cuéntame más sobre tus ideas</label>
+          </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+    
+    <div class="navegador">
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href=#aboutme>Sobre mí</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+    function pasar(){
+      if($('.carousel').is(':visible')){
+        $('.carousel').carousel('next');
+      }
+    }
+    setInterval('pasar()', 2500);
+  </script>
+  </body>
+</html>
